@@ -1,0 +1,10 @@
+universe   = vanilla
+executable = pp_tzq.sh
+arguments  = $(Process)
+output     = tzq_logs/pp_tzq_output_$(Process).log
+error      = tzq_logs/pp_tzq_error_$(Process).err
+log        = tzq_logs/pp_tzq_condor.log
+request_cpus = 4
+request_memory = 4000MB
++JobFlavour = "nextweek"
+queue 50
